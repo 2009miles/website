@@ -106,13 +106,13 @@ for(i=0;i<maximizeButtons.length;i++){
         if(!clickedWindow.classList.contains('maximized')){
             clickedWindow.remove();
             clickedWindow.classList.add('maximized');
-            event.target.querySelector('img').src = "./ICONS/maximize0.svg";
+            event.target.querySelector('img').src = "../ICONS/maximize0.svg";
             event.target.parentElement.style.transform = "";
             openArea.append(clickedWindow);
         }else{
             clickedWindow.remove();
             clickedWindow.classList.remove('maximized');
-            event.target.querySelector('img').src = "./ICONS/maximize1.svg";
+            event.target.querySelector('img').src = "../ICONS/maximize1.svg";
             openArea.append(clickedWindow);
             movementSwitch = true;
         }
