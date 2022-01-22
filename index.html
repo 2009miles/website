@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bgomes</title>
+    <link rel="stylesheet" href="./CSS/main.min.css">
+</head>
+<body>
+    <!--website area for open windows-->
+    <section class="openArea">
+        <!--navigation window opener-->
+        <div class="openingLinks openNavigation">
+            <img src="./ICONS/compass.svg" alt="navigation area icon">
+            <p class="openNavigationLabel">Navigation</p>
+        </div>
+
+        <!--navigation window (only area initially open)-->
+        <div class="window Navigation">
+            <div class="windowTitleBar">
+                <p>Navigation</p>
+            </div>
+            <div class="windowButtons close">
+                <img src="./ICONS/close.svg" alt="minimize icon">
+            </div>
+            <div class="windowButtons maximize">
+                <img src="./ICONS/maximize1.svg" alt="maximize icon">
+            </div>
+            <div class="windowButtons minimize">
+                <img src="./ICONS/minimize.svg" alt="minimize icon">
+            </div>
+            <div class="windowContent">
+                <ul>
+                    <li class="openingLinks openAboutMe">
+                        <img src="./ICONS/info.svg" alt="folder image">
+                        <p>About me</p>
+                    </li>
+                    <li class="openingLinks openPortfolio">
+                        <img src="./ICONS/folders.svg" alt="folder image">
+                        <p>Portfolio</p>
+                    </li>
+                    <li class="openingLinks openCV">
+                        <img src="./ICONS/file.svg" alt="folder image">
+                        <p>Curriculum Vitae</p>
+                    </li>
+                    <li class="openingLinks openContacts">
+                        <img src="./ICONS/message.svg" alt="folder image">
+                        <p>Contacts</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!--website area for minimized windows-->
+    <section class="minimizedArea">
+
+    </section>
+
+    <!--website area for inactive windows-->
+    <section class="inactiveArea">
+
+        <!--about me window-->
+        <div class="window AboutMe">
+            <div class="windowTitleBar">
+                <p>About Me</p>
+            </div>
+            <div class="windowButtons close">
+                <img src="../ICONS/close.svg" alt="minimize icon">
+            </div>
+            <div class="windowButtons maximize">
+                <img src="../ICONS/maximize1.svg" alt="maximize icon">
+            </div>
+            <div class="windowButtons minimize">
+                <img src="../ICONS/minimize.svg" alt="minimize icon">
+            </div>
+            <div class="windowContent">
+                <p>My name is <span>Bruno</span> and I'm a <span>tecnhology enthusiast</span> with a passion for the web.</p>
+                <p>Over the past few years (and with the encouragement of a few friends) I began tinkering in programming, initially with <span>Python</span>, working my way up from simple <span>command line projects</span> all the way to complete (if not the best looking) websites using frameworks such as <span>Flask</span>, creating simple <span>APIs</span> and managing data through solutions like <span>MongoDB</span>.</p>
+                <p>Through these experiences I learned two important things:</p>
+                    <ul>
+                        <li>
+                            <p>
+                                - I really, really enjoyed programming;
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                - I needed to learn frontend development in order to complement the work so far done in the backend or work on anything professionally.
+                            </p>
+                        </li>
+                    </ul>
+                <p>This lead me to find EDIT, the school where over the last few months I improved my knowledge in <span>HTML</span> and <span>CSS (SASS)</span>, and where I also had the chance to learn <span>JavaScript</span>, a language which I really enjoy programming in.</p>
+                <p>Currently I'm working on personal projects, such as this website, and <span>looking for my first job as a Frontend developer</span> where I can start putting my knowledge to work!</p>
+            </div>
+        </div>
+
+        <!--portfolio window-->
+        <div class="window Portfolio">
+            <div class="windowTitleBar">
+                <p>Portfolio</p>
+            </div>
+            <div class="windowButtons close">
+                <img src="../ICONS/close.svg" alt="minimize icon">
+            </div>
+            <div class="windowButtons maximize">
+                <img src="../ICONS/maximize1.svg" alt="maximize icon">
+            </div>
+            <div class="windowButtons minimize">
+                <img src="../ICONS/minimize.svg" alt="minimize icon">
+            </div>
+            <div class="windowContent">
+                test
+            </div>
+        </div>
+
+        <!--CV window-->
+        <div class="window CV">
+            <div class="windowTitleBar">
+                <p>CV</p>
+            </div>
+            <div class="windowButtons close">
+                <img src="../ICONS/close.svg" alt="minimize icon">
+            </div>
+            <div class="windowButtons maximize">
+                <img src="../ICONS/maximize1.svg" alt="maximize icon">
+            </div>
+            <div class="windowButtons minimize">
+                <img src="../ICONS/minimize.svg" alt="minimize icon">
+            </div>
+            <div class="windowContent">
+                <ul>
+                    <li class="CVSegment active">
+                        <h1>Education:</h1>
+                        <p><span>EDIT</span> - Frontend Development Course</p>
+                        <p><span>University of Lisbon</span> - Post-graduate degree in Human Resources Management</p>
+                        <p><span>University of Lisbon</span> - Bachelors Degree in Sociology</p>
+                    </li>
+                    <li class="CVSegment">
+                        <h1>Professional Experience:</h1>
+                        <p><span>Olisipo</span> - IT Recruiter</p>
+                        <p><span>Altran</span> - IT Recruiter</p>
+                        <p><span>Talentseed</span> - IT Recruiter</p>
+                    </li>
+                    <li class="CVSegment">
+                        <h1>Technical Knowledge: <span id="technicalKnowhowDetailLabel">(click each for details)</span></h1>
+                        <p><span>HTML</span> - 2 years</p>
+                        <p><span>CSS/SASS</span> - 1 year</p>
+                        <p><span>Bootstrap</span> - 6 months</p>
+                        <p><span>JavaScript</span> - 1 year</p>
+                        <p><span>jQuery</span> - 6 months</p>
+                        <p><span>Python</span> - 3 years</p>
+                        <p><span>Flask</span> - 2 years</p>
+                        <p><span>MongoDB (Atlas)</span> - 1 year</p>
+                        <p><span>Git / GitHub</span> - 3 years</p>
+                        <p><span>React / Redux</span> - 1 month</p>
+                    </li>
+                    <li class="CVSegment">
+                        <h1>Additional information:</h1>
+                        <p><span>Certifications</span> - Python and Flask Bootcamp (Udemy) <a href="https://www.udemy.com/certificate/UC-786c21fc-3319-4a1e-9a72-48d52c3d61e8/">[certificate]</a></p>
+                        <p><span>Volunteer experience</span> - GDG DevFest Lisbon '19</p>
+                        <p><span>Languages</span> - Portuguese (native), English (fluent)</p>
+                    </li>
+                </ul>
+                <img src="./ICONS/leftArrow.svg" class="CVSlideshowArrows" id="leftArrow" alt="left arrow">
+                <img src="./ICONS/rightArrow.svg" class="CVSlideshowArrows" id="rightArrow" alt="right arrow">
+                <a href="./DOWNLOADABLE/Bruno Gomes - Curriculum Vitae.pdf" download="CV_Bruno Gomes" class="downloadLink">Download full CV</a>
+            </div>
+        </div>
+
+        <!--contacts-->
+        <div class="window Contacts">
+            <div class="windowTitleBar">
+                <p>Contacts</p>
+            </div>
+            <div class="windowButtons close">
+                <img src="../ICONS/close.svg" alt="minimize icon">
+            </div>
+            <div class="windowButtons maximize">
+                <img src="../ICONS/maximize1.svg" alt="maximize icon">
+            </div>
+            <div class="windowButtons minimize">
+                <img src="../ICONS/minimize.svg" alt="minimize icon">
+            </div>
+            <div class="windowContent">
+                <p>My <span>email</span> is <span>bgomesdev@gmail.com</span>, feel free to drop me a line for any <span>project</span> or <span>job offer</span> enquiries.</p>
+                <p>If you want to talk, call my <span>cellphone</span> at <span>96 431 47 20</span>.</p>
+                <p>You can also reach me via <a href="https://www.linkedin.com/in/brunomgomes95/"><span>my LinkedIn</span></a> or <a href="https://github.com/bgomesdev"><span>my GitHub</span></a>.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./JS/windowMovement.js"></script>
+    <script src="./JS/windowOpener.js"></script>
+    <script src="./JS/CVCarousel.js"></script>
+</body>
+</html>
