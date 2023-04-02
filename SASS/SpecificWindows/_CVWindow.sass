@@ -1,0 +1,64 @@
+.CV
+    top: 17%
+    left: 30%
+    width: 600px
+
+    .windowContent
+        position: relative
+        text-align: center
+
+        ul
+            pointer-events: none
+            position: relative
+            width: calc(100% - 120px)
+            margin: 15px 60px
+            border: 1px solid #191919f5
+            border-radius: 5px
+            text-align: left
+
+            li
+                display: none
+
+                &.active
+                    display: block
+
+                p
+                    font-size: 18px
+                    font-weight: 300
+                    line-height: 125%
+                    margin: 10px 15px
+
+                    a
+                        pointer-events: auto
+
+                h1, span
+                    font-weight: 400
+
+                h1
+                    font-size: 18px
+                    margin: 15px 15px
+
+                #technicalKnowhowDetailLabel
+                    font-size: 12px
+                    font-weight: 300
+
+        .CVSlideshowArrows
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            left: 10px
+            cursor: pointer
+
+            &:last-of-type
+                left: calc(100% - 50px)
+
+.downloadLink
+    font-size: 16px
+    line-height: 30px
+    padding: 2px 5px
+    border: 1px solid #191919f5
+    border-radius: 5px
+    text-decoration: none
+
+.downloadLink:hover
+    background-color: $mainBackgroundColor

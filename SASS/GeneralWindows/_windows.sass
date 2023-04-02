@@ -1,0 +1,54 @@
+.window
+    position: absolute
+    
+    &.minimized
+        top: calc(100vh - 36px)
+        left: 0px
+        width: 200px
+
+    &.maximized
+        .windowContent
+            height: 100vh
+
+    .windowTitleBar
+        height: 34px
+        background-color: #191919f5
+        border-top-left-radius: 5px
+        border-top-right-radius: 5px
+
+        p
+            pointer-events: none
+            position: relative
+            top: 50%
+            transform: translateY(-50%)
+            padding-left: 10px
+            font-size: 18px
+            color: white
+
+    .windowButtons
+        position: relative
+        bottom: 34px
+        float: right
+        height: 34px
+        width: 56px
+
+        img
+            pointer-events: none
+            position: relative
+            top: -1px
+            margin: 9px 19px
+
+        &:hover
+            background-color: #ffffff31
+
+        .close:hover
+            background-color: #E81123
+            border-top-right-radius: 5px
+
+    .windowContent
+        position: absolute
+        width: calc(100% - 2px)
+        border: 1px solid #191919f5
+        background-color: $openAreaWindowContentAreaBackgroundColor
+        border-bottom-left-radius: 5px
+        border-bottom-right-radius: 5px
